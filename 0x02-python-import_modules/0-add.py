@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """prints the sum of a and b or 1 and 2"""
+    """prints the sum of 1 and 2"""
     from add_0 import add
 
     a = 1
