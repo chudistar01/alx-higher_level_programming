@@ -18,16 +18,19 @@ Using ``+`` operator.
 ::
 	>>> add_integer(2, -3)
 	-1
-The function also works with float value
+
+The function also works with float value.
 
 ::
 	>>> add_integer(2.0, 3.0)
 	5
+
 Note that float are casted into integer
 
 ::
 	>>> add_integer(2.9, 0.2)
 	2
+
 Floating and non floating values can be combined
 
 ::
@@ -50,18 +53,15 @@ if either argument is non-integer and non-float, a TypeError is raised:
 	Traceback(most recent call last):
 	TypeError: a must be an integer
 
-
 ::
 	>>> add_integer(2, "hello")
 	Traceback(most recent call last):
 	TypeError: b must be an integer
 
-
 ::
 	>>> add_integer(None)
 	Traceback(most recent call last):
 	TypeError: a must be an integer
-
 
 ::
 	>>> add_integer(2.3, None)
@@ -71,7 +71,6 @@ if either argument is non-integer and non-float, a TypeError is raised:
 if both arguments are non-integers and non-float, a TypeError is message
 is only printed for the first argument
 
-
 ::
 	>>> add_integer("hello", "there")
 	Traceback(most recent call last):
@@ -79,12 +78,10 @@ is only printed for the first argument
 
 The function will if infinity if infinity is provided
 
-
 ::
 	>>> add_integer(float('inf'))
 	Traceback(most recent call last):
 	OverflowError: cannot convert float infinity to integer
-
 
 ::
 	>>> add_integer(2, float('inf'))
@@ -93,12 +90,10 @@ The function will if infinity if infinity is provided
 
 And again with NaN numbers.
 
-
 ::
 	>>> add_integer(float('nan')
 	Traceback(most recent call last):
 	ValueError: cannot convert float NaN to integer
-
 
 ::
 	>>> add_integer(2, float('nan')

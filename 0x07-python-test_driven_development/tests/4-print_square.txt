@@ -49,21 +49,21 @@ The parameter ``size`` must be an integer. Otherwise, a typeerror is raised
 
 ::
 	>>> print_square("not an int")
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	TypeError: size must be an integer
 
 ::
 
 	
 	>>> print_square(9.5)
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	TypeError: size must be an integer
 
 ::
 
 	
 	>>> print_square(None)
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	TypeError: size must be an integer
 
 If ``size`` is less than zero a valueError is raised.
@@ -72,7 +72,7 @@ If ``size`` is less than zero a valueError is raised.
 
 	
 	>>> print_square(-22)
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	ValueError: size must be >= 0
 
 Type checking occurs before value checking
@@ -80,7 +80,7 @@ Type checking occurs before value checking
 ::
 
 	>>> print_square(-6.8)
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	TypeError: size must be an integer
 
 At least one argument must be provided
@@ -89,6 +89,6 @@ At least one argument must be provided
 
 	
 	>>> print_square()
-	Traceback(most recent call last):
+	Traceback (most recent call last):
 	TypeError: print_square() missing 1 required positional argument: 'size'
 	
