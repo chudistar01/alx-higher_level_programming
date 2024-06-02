@@ -21,7 +21,6 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-
     @classmethod
     def square(cls, size=0):
         return cls(size, size)
