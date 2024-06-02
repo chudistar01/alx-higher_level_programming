@@ -21,6 +21,11 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
+
+    @classmethod
+    def square(cls, size=0):
+        return cls(size, size)
+
     @property
     def width(self):
         """returns width of rectangle"""
@@ -65,10 +70,6 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
-
-    @classmethod
-    def square(cls, size=0):
-        return cls(size, size)
 
     def area(self):
         """returns the area of the rectangle"""
