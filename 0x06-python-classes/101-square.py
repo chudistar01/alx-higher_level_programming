@@ -56,7 +56,6 @@ class Square:
         for _ in range(self.__size):
             print(" " * + self.__position[0] + "#" * self.__size)
 
-
     def __str__(self):
         """prints square"""
         if self.__size == 0:
@@ -64,4 +63,5 @@ class Square:
         new_lines = '\n' * self.__position[1]
         spaces = ' ' * self.__position[0]
         hashes = '#' * self.__size
-        return new_lines + '\n'.join(spaces + hashes for _ in range(self.__size))
+        return new_lines + '\n'.join(
+            spaces + hashes for _ in range(self.__size))
