@@ -18,12 +18,12 @@ class Rectangle:
             height (int): height of the rectangle
         """
         Rectangle.number_of_instances += 1
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @classmethod
     def square(cls, size=0):
-        return cls(size, size)
+        return Rectangle(size, size)
 
     @property
     def width(self):
