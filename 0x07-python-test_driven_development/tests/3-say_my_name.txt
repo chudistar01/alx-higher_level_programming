@@ -23,7 +23,7 @@ is printed
 
 ::
 	say_my_name("Chris")
-	My name is Beta 
+	My name is Chris 
 
 Invalid Names
 =============
